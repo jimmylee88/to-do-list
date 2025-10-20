@@ -19,11 +19,12 @@ function addTask() {
         // Creates a new li 
         var newListItem = document.createElement("li");
 
-        // Add the li to the task-list ul
         newListItem.textContent = taskText;
 
+        // Add the li to the task-list ul
         taskList.appendChild(newListItem); 
 
+        // clears the input for a new task to enter
         taskInput.value = "";
 
     } else {
