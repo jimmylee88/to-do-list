@@ -19,16 +19,38 @@ function addTask() {
         // Creates a new li 
         var newListItem = document.createElement("li");
 
-        newListItem.textContent = taskText;
+        // Add a delete button with event listenr to the li
+        var deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        deleteButton.className = "delete-btn";
+        deleteButton.addEventListener("click", deleteTask);
+
+        // Add inputted text to li
+        var taskSpan = document.createElement("span");
+        taskSpan.textContent = taskText;
+
+        // Append to li
+        newListItem.appendChild(taskSpan);
+        newListItem.appendChild(deleteButton);
 
         // Add the li to the task-list ul
         taskList.appendChild(newListItem); 
-
+        
         // clears the input for a new task to enter
         taskInput.value = "";
 
-    } else {
+    } 
+    
+    else {
         alert("You can't enter an empty task! \nPlease type one in.");  
     }
+}
+
+// delete button function
+function deleteTask(event) {
+    var buttonClicked = event.target;
+    var listItem = buttonClicked.parentNode;
+    var taskList = listItem.parentNode;
+    listItem.remove();
 }
 
