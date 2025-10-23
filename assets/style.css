@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-font: 'MuseoModerno', sans-serif;
+    --main-font: 'Figtree', sans-serif;
+    --main-bg: rgb(196, 190, 186);
+    --primary-color: rgb(229, 102, 74);
+    --secondary-color: ;
+}
+
+body {
+    background-color: var(--main-bg);
+}
+
+#todo-app {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+.input-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+#text-field {
+    padding: 16px;
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+    border: 1px solid var(--primary-color);
+}
+
+#submit-btn {
+    margin-right: 16px;
+    padding: 16px;
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-style: italic;
+    font-weight: 200;
+    font-size: 4rem;
+    line-height: 3.3rem;
+    color: var(--primary-color);
+}
+
+span {
+    margin-right: 8px;
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+}
+
+#task-list {
+    /* Gets rid of default indent spacing */
+    padding-inline-start: 0;
+}
+
+li {
+    margin-bottom: 24px;
+    padding: 16px;
+    list-style: none;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.2s ease-in-out;
+    min-width: 300px
+}
+
+li:hover {
+    box-shadow: 0 0 2px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
+button.delete-btn {
+    padding: 8px;
+    background-color: var(--main-bg);
+    border: 1px solid var(--primary-color);
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+button.delete-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: grab;
+}
+
+button.delete-btn:active {
+    cursor: grabbing;
+}
