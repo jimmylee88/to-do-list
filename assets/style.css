@@ -58,6 +58,7 @@ header {
 
 #submit-btn:active {
     background-color: black;
+    text-decoration: underline;
 }
 
 h1 {
@@ -86,11 +87,11 @@ li {
     list-style: none;
     box-shadow: 0 0 8px rgba(0,0,0,0.2);
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     gap: 16px;
     transition: all 0.2s ease-in-out;
-    min-width: 300px
 }
 
 li:hover {
