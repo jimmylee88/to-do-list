@@ -37,7 +37,7 @@ function addTask() {
         taskList.appendChild(newListItem); 
         
         // // clears the input for a new task to enter
-        // taskInput.value = "";
+        taskInput.value = "";
     } 
     
     else {

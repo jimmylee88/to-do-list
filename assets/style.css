@@ -5,9 +5,9 @@
 :root {
     --heading-font: 'MuseoModerno', sans-serif;
     --main-font: 'Figtree', sans-serif;
-    --main-bg: rgb(196, 190, 186);
+    --main-bg: rgb(221, 208, 200);
     --primary-color: rgb(229, 102, 74);
-    --secondary-color: ;
+    --secondary-color:  rgb(132, 36, 15) ;
 }
 
 body {
@@ -49,6 +49,15 @@ header {
     background-color: var(--primary-color);
     border: none;
     color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+#submit-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+#submit-btn:active {
+    background-color: black;
 }
 
 h1 {

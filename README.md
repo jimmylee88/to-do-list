@@ -9,7 +9,7 @@ I managed to get a basic functioning demo working, that allows a user to input t
 I added the ability to delete a task from the list once it's been added.
 Going to do some basic styling, so that it least sits centred in the page.
 
-Some features I'd like to add if I have time, and gain the skills to know:
+Some features I'd like to add if I have time, and learn more javascript:
 - Remember your tasks even after a browser refresh
 - Ability to edit tasks after they're added to the list
 - Ability to check off tasks, rather than delete them entirely
